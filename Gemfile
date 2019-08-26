@@ -38,6 +38,25 @@ gem 'pry-rails'
 gem 'tty-spinner'
 gem 'rails-i18n', '~> 5.1'
 gem 'webpacker'
+##########################3
+#
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+  gem 'shoulda-matchers'
+end
+
+group :test do
+  gem 'database_cleaner'
+end
+
+group :development, :test do
+      gem 'factory_bot_rails'
+end
+
 
 
 group :development, :test do
