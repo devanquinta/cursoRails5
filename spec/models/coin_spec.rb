@@ -2,6 +2,7 @@ require 'rails_helper'
 RSpec.describe Coin, type: :model do
   describe 'VALIDAÇÃO' do
     let!(:coin) { FactoryBot.create :coin }
+    let!(:mining_type ) { FactoryBot.create :mining_type  }
     subject { coin }
     it { is_expected.to validate_presence_of(:description) }
     it { is_expected.to validate_presence_of(:acronym) }
