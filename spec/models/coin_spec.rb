@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'simplecov'
+SimpleCov.start
 
 RSpec.describe Coin, type: :model do
   describe 'VALIDAÇÃO' do
