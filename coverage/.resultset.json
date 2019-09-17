@@ -1,0 +1,25 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/vander/cursoRails5/app/models/coin.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/vander/cursoRails5/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/vander/cursoRails5/app/models/mining_type.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1568741009
+  }
+}

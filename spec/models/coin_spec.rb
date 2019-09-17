@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe Coin, type: :model do
   describe 'VALIDAÇÃO' do
     let!(:coin) { FactoryBot.create :coin }

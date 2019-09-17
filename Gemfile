@@ -40,30 +40,16 @@ gem 'rails-i18n', '~> 5.1'
 gem 'webpacker'
 ##########################3
 #
-group :development, :test do
-  gem 'rspec-rails', '~> 3.8'
-end
-
-group :development, :test do
-  gem 'rspec-rails', '~> 3.8'
-  gem 'shoulda-matchers'
-end
-
-group :test do
-  gem 'database_cleaner'
-end
-
-group :development, :test do
-      gem 'factory_bot_rails'
-end
-
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 3.8'
+  gem 'shoulda-matchers'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
@@ -77,10 +63,15 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15', '< 4.0'
+  gem 'capybara', '~> 3.8'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'capybara-selenium'
+  gem 'webdrivers', '~> 4.0'
+  gem 'rspec-html-matchers'
+  gem 'database_cleaner'
+  gem 'simplecov', require: false
 end
 
 
